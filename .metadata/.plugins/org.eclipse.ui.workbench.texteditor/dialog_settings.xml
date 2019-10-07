@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="replybcontent"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="replybcontent"/>
+			<item value="mo"/>
+			<item value="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"/>
+			<item value="like_content_view"/>
+			<item value="reply_view.jsp"/>
+			<item value="likeboard"/>
+			<item value="likecontentView"/>
+			<item value="login_form"/>
+			<item value="WsServer2"/>
+			<item value="downHit"/>
+			<item value="upHit"/>
+			<item value="content_view"/>
+			<item value="content_view.do"/>
+			<item value="BReplyCommand"/>
+			<item value="ArrayList&lt;BDto&gt; list"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="8"/>
+		<item key="DIALOG_Y_ORIGIN" value="136"/>
+		<item key="DIALOG_WIDTH" value="252"/>
+		<item key="DIALOG_HEIGHT" value="558"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

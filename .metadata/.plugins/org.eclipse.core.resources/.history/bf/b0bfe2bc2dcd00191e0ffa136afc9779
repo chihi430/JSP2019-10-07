@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#my-form').submit(function (event){
+			
+			var serialize = $(this).serialize();
+			var serializeArray = $(this).serializeArray(); 
+			
+			$('<h1></h1>').text(serialize).appendTo('#wrap');
+			$('<h1></h1>').text(serializeArray).appendTo('#wrap');
+			
+			// 기본 이벤트를 제거합니다.
+			event.preventDefault();
+		});
+	});
+</script>
+<title>Insert title here</title>
+</head>
+<body>
+		<div id="ajax=event"></div>
+		
+		<div id="wrap">
+		</div>
+		
+</body>
+</html>

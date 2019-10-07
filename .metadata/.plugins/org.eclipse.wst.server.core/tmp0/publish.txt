@@ -1,0 +1,10 @@
+#Tomcat publish data
+#Sat Oct 05 19:22:16 KST 2019
+org.eclipse.jst.jee.server\:1.Jsp-Project=C\:\\Java\\apache-tomcat-8.5.45-windows-x64\\apache-tomcat-8.5.45\\wtpwebapps\\1.Jsp-Project
+org.eclipse.jst.jee.server\:WebSocket=C\:\\Java\\apache-tomcat-8.5.45-windows-x64\\apache-tomcat-8.5.45\\wtpwebapps\\WebSocket
+org.eclipse.jst.jee.server\:SNS_login=C\:\\Java\\apache-tomcat-8.5.45-windows-x64\\apache-tomcat-8.5.45\\wtpwebapps\\SNS_login
+org.eclipse.jst.jee.server\:Jsp22-FileUpload=C\:\\Java\\apache-tomcat-8.5.45-windows-x64\\apache-tomcat-8.5.45\\wtpwebapps\\Jsp22-FileUpload
+org.eclipse.jst.jee.server\:expro=C\:\\Java\\apache-tomcat-8.5.45-windows-x64\\apache-tomcat-8.5.45\\wtpwebapps\\expro
+org.eclipse.jst.jee.server\:fileupload=C\:\\Java\\apache-tomcat-8.5.45-windows-x64\\apache-tomcat-8.5.45\\wtpwebapps\\fileupload
+org.eclipse.jst.jee.server\:papago=C\:\\Java\\apache-tomcat-8.5.45-windows-x64\\apache-tomcat-8.5.45\\wtpwebapps\\papago
+org.eclipse.jst.jee.server\:BootStrapEx=C\:\\Java\\apache-tomcat-8.5.45-windows-x64\\apache-tomcat-8.5.45\\wtpwebapps\\BootStrapEx

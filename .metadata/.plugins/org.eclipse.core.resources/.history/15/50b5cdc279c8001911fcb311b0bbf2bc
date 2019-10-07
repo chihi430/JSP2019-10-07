@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+$(document).ready(function(){
+	$('h1').css('color','Orange');
+});
+
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Lorem ipSum</h1>
+	<p>Lorem ipSum dolor sit amet.</p>
+	<h1>Lorem ipSum</h1>
+	<p>Lorem ipSum dolor sit amet.</p>
+	<h1>Lorem ipSum</h1>
+	<p>Lorem ipSum dolor sit amet.</p>
+</body>
+</html>

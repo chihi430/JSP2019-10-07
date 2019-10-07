@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+	.high_light_0 {background: Yellow;}
+	.high_light_1 {background: Orange;}
+	.high_light_2 {background: Blue;}
+	.high_light_3 {background: Green;}
+	.high_light_4 {background: Red;}
+	
+</style>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		var object ={};
+		object.name = 'RintIanTta';
+		object.gender = 'Male';
+		object.part = 'Second Guitar';
+	});
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>jQurey를 사용한 배열관리(2)</h2>
+		<h3>addClass() 메서드의 매개 변수 활용</h3>
+			 
+			<ul>
+				<li> 코드 1-21처럼 함수도 입력가능</li>				
+			</ul>
+	<hr>
+	<h1>item - 0</h1>
+	<h1>item - 1</h1>
+	<h1>item - 2</h1>
+	<h1>item - 3</h1>
+	<h1>item - 4</h1>
+
+</body>
+</html>

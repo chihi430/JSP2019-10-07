@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$.noConflict();
+	var J =jQuery;	
+		
+		J(document).ready(function (){
+			alert("111");
+			J('h1').removeClass('hight_light');		
+	});
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>jQurey를 사용한 객체 확장</h2>
+		<h3>$. extend() 메서드</h3>
+			 
+			<ul>
+				<li> 많은 수의 속성 추가할 때 생기는 문제를 해결하는 메서드</li>
+				<li> 사용법($.extend(object,addObject,addObject....))</li>				
+			</ul>
+	<hr>
+
+
+</body>
+</html>

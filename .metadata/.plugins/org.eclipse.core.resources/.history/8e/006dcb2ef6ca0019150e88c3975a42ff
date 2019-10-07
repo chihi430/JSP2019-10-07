@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+	<script>
+		$(document).ready(function () {
+			$.ajax({
+				url: '/parameter',
+				type:'GET',
+				data:{
+					name:'test';
+					region: 'test';
+				}
+				success: function (data) {					
+					$('body').append(data);
+				}
+			});
+		});
+	</script>
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

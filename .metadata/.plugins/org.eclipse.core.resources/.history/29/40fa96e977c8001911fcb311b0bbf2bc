@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+$(document).ready(function(){
+	$('h1#target').css('color','Orange');
+	// 선택자     css   컬러        색깔명
+});
+
+</script>
+
+</head>
+<body>
+<h1> jQurey 기본 선택자</h1>
+   아이디 선택자의 활용<br>
+ id 속성은 HTML 페이지 내에서 단 하나의 태그에만 적용<br>
+  태그 선택자와 아이디 선택자 함께 사용하지 않아도 됨
+<hr>
+
+	<h1>Header-0</h1>	
+	<h1>Header-1</h1>
+	<h1 id = "target">Header-2</h1>
+</body>
+</html>

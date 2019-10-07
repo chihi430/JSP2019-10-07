@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$('h1').css('background','Orange').filter(:even).css('color','Red');
+		}); 
+	});
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>Header-0</h3>
+	<h3>Header-1</h3>
+	<h3>Header-2</h3>
+	<h3>Header-3</h3>
+	<h3>Header-4</h3>
+	<h3>Header-5</h3>
+</body>
+</html>

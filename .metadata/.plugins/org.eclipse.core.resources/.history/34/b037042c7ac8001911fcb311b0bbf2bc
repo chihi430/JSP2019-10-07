@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+$(document).ready(function(){
+	$('*').css('color','Red');
+});
+$(document).ready(function(){
+	$('*').css('color','Green');
+});
+</script>
+
+<title>Insert title here</title>
+</head>
+	<h1>jQurey 기본 선택자</h1>
+	전체 선택자
+	<br>
+	<ul>
+		<li>CSS의 가장 기본적인 선택자는 전체 선택자 Wildcard Selector</li>
+		<li>HTML 페이지에 있는 모든 문서 객체를 선택하는 선택자 * </li>
+	</ul>
+	<hr>
+
+<body>
+	<h1>Lorem ipSum</h1>
+	<h1>Lorem ipSum</h1>
+	<h1>Lorem ipSum</h1>
+</body>
+</html>

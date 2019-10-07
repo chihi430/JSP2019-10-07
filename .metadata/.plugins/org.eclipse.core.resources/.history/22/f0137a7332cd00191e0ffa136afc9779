@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	
+	function form_check(){
+		var vName = $('#name').val();
+		
+		
+	}
+	function submit_ajax(){
+		
+	}
+	function return_xml(data){
+		
+	}
+		
+	$(document).ready(function() {
+				
+			
+		
+	});
+</script>
+<title>Insert title here</title>
+</head>
+<body>
+	<form id="my=form">
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><input id="name" name="name" type="text"></td>				
+			</tr>
+			<tr>
+				<td>Region</td>
+				<td><input id="region" name="region" type="text"></td>				
+			</tr>
+		</table>
+		<input type="button" value="Get Ajax String" onclick="form_check()" />
+	</form>
+	
+	
+
+</body>
+</html>

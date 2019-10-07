@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>05-10 : 브라우저 정보출력</title>
+<style>
+span {
+	color: red;
+}
+
+div {
+	border-color: yellowgreen;
+	border-style: solid;
+	padding: 5px;
+}
+</style>
+<script>
+function printNavigator(){
+	
+	text += "1. location =" + document.location + "\n";
+	text += "2. URL =" + document.URL + "\n";
+	text += "3. title =" + document.title + "\n";
+	text += "4. head의 id =" + document.head.id + "\n";
+	text += "5. body color =" + document.body.style.color + "\n";
+	text += "6. domain =" + document.domain + "\n";
+	;
+	text += "7. lastModified =" + document.lastModified + "\n";
+	text += "8. defaultView = " + document.defaultView + "\n";
+	text += "9. 문서의 로드 완료 후 readyState = " + document.readyState + "\n";
+	text += "10. referrer = " + document.referrer + "\n";
+	text += "11. activeElement = " + document.activeElement.value + "\n";
+	text += "12. documentElement의 태그 이름 = " + document.documentElement.tagName
+			+ "\n";
+	for(j=0;j<navigator.plugins.length; j++){
+		text += "plugins" + j + ":<blockquote>"; 
+		text += navigator.plugins[j].name + "<br>";
+		text += "<i>" + navigator.plugins[j].description+"</i><br>";
+		text += navigator.plugins[j].filename +"</blockquote>" 
+	}
+	//div에 태그 출력
+	var div = document.getElementById("div");
+	div.innerHTML = text;
+	}
+</script>
+</head>
+<body onload="printNavigator()">
+	<h3>브라우저에 관한 정보 출력</h3>
+	아래에 이 브라우저에 관한 여러 정보를 출력합니다.
+	<hr>
+	
+	
+	<p>
+	<div id="div"></div>
+		<button onclick="load()">웹사이트 접속</button>
+</body>
+</html>
+
+
+
+

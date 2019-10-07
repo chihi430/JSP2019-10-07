@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>04-07: 이벤트의 디폴트 행동 취소</title>
+</head>
+
+<script>
+	function query() { //e 는 현재 발생한 이벤트 객체
+		var ret = confirm("네이버로 이동하시겠습니까?");
+		return ret;//confirm()의 리턴 값을 true 또는 false			  	
+	}
+	function noAction(e){
+		e.preventDefault();
+	} 
+</script>
+<body>
+	<h3>이벤트의 디폴트 행동 취소</h3>
+	<hr>
+	<a href="http://www.naver.com" onclick="return query()">
+	네이버로 이동할 지 물어보는 링크</a>
+	<hr>
+	<form>
+		<input type="checkbox">빵(체크됨)<br>
+		<input type="checkbox" onclick="noAction(event)">술(체크안됨)<br>
+	</form>
+
+</body>
+</html>

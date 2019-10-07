@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.reverse{
+	background : Black;
+	color:White;
+	}
+</style>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+$(document).ready(function(){
+	$('h1').bind('click',function(){
+		$(this).html(function(index,html){
+			return html +'+';
+		});
+	});
+	$('h1').bind({
+		mouseenter: function(){$(this).addClass('reverse');},
+		mouseleave: function(){$(this).removeClass('reverse');}
+	});
+});
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Header-0</h1>
+	<h1>Header-1</h1>
+	<h1>Header-2</h1>
+	
+</body>
+</html>

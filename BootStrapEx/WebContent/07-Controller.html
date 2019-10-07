@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+   <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Bootstrap CSS -->
+
+<style>
+	.test1{
+
+		 }
+</style>
+
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>Example heading <span class="badge badge-primary">New</span></h1>
+	<h2>Example heading <span class="badge badge-secondary">New</span></h2>
+	<h3>Example heading <span class="badge badge-secondary">New</span></h3>
+	<h4>Example heading <span class="badge badge-secondary">New</span></h4>
+	<h5>Example heading <span class="badge badge-secondary">New</span></h5>
+	<h6>Example heading <span class="badge badge-secondary">New</span></h6>
+	
+	
+	<!--  상황에 따른 변형
+	아래 언급 된 수정 자 클래스 중 하나를 추가하여 배지 모양을 변경하십시오. -->
+	
+	<span class="badge badge-primary">Primary</span>
+	<span class="badge badge-secondary">Secondary</span>
+	<span class="badge badge-success">Success</span>
+	<span class="badge badge-danger">Danger</span>
+	<span class="badge badge-warning">Warning</span>
+	<span class="badge badge-info">Info</span>
+	<span class="badge badge-light">Light</span>
+	<span class="badge badge-dark">Dark</span>
+	<hr>
+	
+	
+	<!--  알약 배지
+	.badge-pill수정 자 클래스를 사용하여 배지를 더 둥글게 만들 수 있습니다
+	 (더 크고 border-radius추가 가로로 padding). v3에서 배지를 놓친 경우에 유용합니다. -->
+	
+	<span class="badge badge-pill badge-primary">Primary</span>
+	<span class="badge badge-pill badge-secondary">Secondary</span>
+	<span class="badge badge-pill badge-success">Success</span>
+	<span class="badge badge-pill badge-danger">Danger</span>
+	<span class="badge badge-pill badge-warning">Warning</span>
+	<span class="badge badge-pill badge-info">Info</span>
+	<span class="badge badge-pill badge-light">Light</span>
+	<span class="badge badge-pill badge-dark">Dark</span>
+	<hr>
+	
+	<!-- 링크
+	요소 에서 상황 별 .badge-*클래스를 사용하면 호버 및 포커스 상태와 함께 실행 가능한 배지를 <a>신속하게 제공 합니다
+	  -->
+	<a href="#" class="badge badge-primary">Primary</a>
+	<a href="#" class="badge badge-secondary">Secondary</a>
+	<a href="#" class="badge badge-success">Success</a>
+	<a href="#" class="badge badge-danger">Danger</a>
+	<a href="#" class="badge badge-warning">Warning</a>
+	<a href="#" class="badge badge-info">Info</a>
+	<a href="#" class="badge badge-light">Light</a>
+	<a href="#" class="badge badge-dark">Dark</a>
+	<hr>
+	<h2>버튼	</h2>
+	<br>
+	
+	<!--  버튼  -->	
+	<button type="button" class="btn btn-primary"> Notifications <span class="badge badge-light">4</span></button>
+	<button type="button" class="btn btn-primary"> Profile<span class="badge badge-light">9</span>
+	<span class="sr-only">unread messages</span></button>
+	<hr>	
+	<button type="button" class="btn btn-primary">Primary</button>
+	<button type="button" class="btn btn-secondary">Secondary</button>
+	<button type="button" class="btn btn-success">Success</button>
+	<button type="button" class="btn btn-danger">Danger</button>
+	<button type="button" class="btn btn-warning">Warning</button>
+	<button type="button" class="btn btn-info">Info</button>
+	<button type="button" class="btn btn-light">Light</button>
+	<button type="button" class="btn btn-dark">Dark</button>	
+	<button type="button" class="btn btn-link">Link</button>
+	<hr>
+	
+	<!-- 버튼태그 -->
+	<a class="btn btn-primary" href="#" role="button">Link</a>
+	<button class="btn btn-primary" type="submit">Button</button>
+	<input class="btn btn-primary" type="button" value="Input">
+	<input class="btn btn-primary" type="submit" value="Submit">
+	<input class="btn btn-primary" type="reset" value="Reset">
+	<hr>
+	
+	<!--  개요 버튼 -->
+	
+	<button type="button" class="btn btn-outline-primary">Primary</button>
+	<button type="button" class="btn btn-outline-secondary">Secondary</button>
+	<button type="button" class="btn btn-outline-success">Success</button>
+	<button type="button" class="btn btn-outline-danger">Danger</button>
+	<button type="button" class="btn btn-outline-warning">Warning</button>
+	<button type="button" class="btn btn-outline-info">Info</button>
+	<button type="button" class="btn btn-outline-light">Light</button>
+	<button type="button" class="btn btn-outline-dark">Dark</button>
+	<hr>
+	
+	<!-- 크기 -->
+	
+	<button type="button" class="btn btn-primary btn-lg">Large button</button>
+	<button type="button" class="btn btn-secondary btn-lg">Large button</button>
+	
+	<button type="button" class="btn btn-primary btn-sm">Small button</button>
+	<button type="button" class="btn btn-secondary btn-sm">Small button</button>
+	<hr>
+	
+	<!-- 활성상태 -->
+	<!-- 활성화되면 버튼이 눌려져 나타납니다 (배경이 어두워지고 테두리가 어두워지고 그림자가 삽입 됨). 
+	pseudo-class를 사용하므로 클래스를 추가 할 필요가 없습니다<button> . 
+	그러나 프로그래밍 방식으로 상태를 복제해야하는 경우에도 동일한 활성 모양을 강제 
+	.active로 적용하고 aria-pressed="true"속성을 포함 할 수 있습니다  -->
+	<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+	<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+	<hr>
+	
+	
+	<!-- 비활성화 된 상태 -->
+	<button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+	<button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+	<!-- 비활성화 링크 -->
+	<a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+	<a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
+	<hr>
+	
+	<!-- 버튼 플러그인 -->
+	
+	<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+  		Single toggle
+	</button>
+	<hr>
+	
+	<!--  확인란 및 라디오 버튼 -->
+	
+	<div class="btn-group-toggle" data-toggle="buttons">
+  		<label class="btn btn-secondary active">
+    		<input type="checkbox" checked autocomplete="off"> Checked
+  		</label>
+	</div>
+	<hr>
+	
+	<div class="btn-group btn-group-toggle" data-toggle="buttons">
+	  <label class="btn btn-secondary active">
+  		  <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+ 	  </label>
+ 	 <label class="btn btn-secondary">
+    	  <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+  	 </label>
+  		<label class="btn btn-secondary">
+    		<input type="radio" name="options" id="option3" autocomplete="off"> Radio
+  		</label>
+	</div>
+	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

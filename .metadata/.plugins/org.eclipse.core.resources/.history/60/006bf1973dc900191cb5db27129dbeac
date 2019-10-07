@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$('img').css('width', 250);
+
+		setInterval(function() {
+			$('img').first().appenTo('body');
+		}, 2000);
+
+	});
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<img src="Chrysanthemum.jpg" />
+	<img src="Desert.jpg" />
+	<img src="Hydrangeas.jpg" />
+	<img src="Jellyfish.jpg" />
+	<img src="Koala.jpg" />
+	<div></div>
+	<div></div>
+
+</body>
+</html>

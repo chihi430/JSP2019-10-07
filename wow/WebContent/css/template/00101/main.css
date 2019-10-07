@@ -1,0 +1,53 @@
+﻿@charset "utf-8";
+
+#container {position:relative; padding-top:40px; overflow:hidden; background:#fafafa;}
+#container:after {content:""; display:block; clear:both;}
+
+.main_content {position:relative; z-index:1000; width:100%;}
+.main_content:after {content:""; display:block; clear:both;}
+
+.MC_wrap {max-width:1400px; margin:40px auto 30px; overflow: hidden;}
+
+.MC_box1 {position:relative; width:100%; height:570px;} /* 메인비주얼 */
+.MC_box2 {width:100%; height:180px;} /* 퀵메뉴 */
+.MC_box3 {width:900px; height:290px; float:left; overflow: hidden;} /* 공지사항 */
+.MC_box4 {width:400px; height:290px; float:right; overflow: hidden;} /* 포토갤러리 */
+
+@media (max-width:1019px) {
+	
+	.MC_box1, .MC_box2, .MC_box3, .MC_box4, .MC_box5, .MC_box6, .MC_box7, .MC_box8,
+	.MC_box9, .MC_box10, .MC_box11, .MC_box12, .MC_box13, .MC_box14, .MC_box15 {-webkit-transition:all 0.3s ease; -moz-transition:all 0.3s ease; -ms-transition:all 0.3s ease; transition:all 0.3s ease}
+	
+	#container, .main_content,
+	.MC_wrap1, .MC_wrap2, .MC_box1, .MC_box2, .MC_box3, .MC_box4, .MC_box5, .MC_box6, .MC_box7, .MC_box8, 
+	.MC_box9, .MC_box10, .MC_box11, .MC_box12, .MC_box13, .MC_box14, .MC_box15 {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing:border-box}
+	
+	#container {width:100%; padding-top:110px;}
+	
+	.MC_wrap{width:96%;}
+
+	.MC_box1 {height:520px;} /* 메인비주얼 */
+	.MC_box2 {height:auto;}
+	.MC_box3 {width:49%;}
+	.MC_box4 {width:49%;}
+
+	
+}
+
+@media (max-width:860px) {
+
+}
+
+@media (max-width:680px) {
+
+	.MC_box3 {width:100%; height:auto; margin:0 0 20px;}
+	.MC_box4 {width:100%; height:auto;}
+
+}
+
+@media (max-width:580px) {
+
+	.MC_box1 {height:350px;} /* 메인비주얼 */
+
+		
+}

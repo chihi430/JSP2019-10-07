@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		var data = {
+			name : 'HongGilDong',
+			region : 'Seoul',
+		};
+
+		$('<h1></h1>').text($.param(data)).appendTo('body');
+	});
+</script>
+<title>Insert title here</title>
+</head>
+<body>
+	<form id="my=form">
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><input id = "name" name="name" type="text" /></td>
+			</tr>
+		</table>
+</body>
+</html>

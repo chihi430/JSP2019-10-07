@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+ 	function createRequest(){
+ 		var request;
+ 		try {
+			request = new XMLHttpRequest();
+		} catch (exception) {
+			try {
+				request = new ActiveXObject('Msxml2.XMLHTTP');
+			} catch (innerException) {
+				request = new ActiveXObject('Microsoft.XMLHTTP');
+			}
+		}
+		return request;
+ 	}
+	var request = createRequest();
+	request.open('GET','../test/data.html', false);
+	
+	
+	//Ajax를 수행합니다.
+	request.send();
+	
+	//출력합니다.	
+	//alert(request.responseText);
+	document.body.innerHTML += request.responseText;
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		// 5초 후에 코드를 실행합니다.
+		setTimeout(function() {
+			//변수를 선언 합니다.
+			var value = $('select > option:selected').val();
+			alert(value);
+		},5000);
+	});
+</script>
+</head>
+<body>
+	<h1>jQurey 입력양식 필터 선택자</h1>
+	<h3>속성 선택자 사용 예제</h3>
+	<hr>
+	<select>
+		<option>Apple</option>
+		<option>Bag</option>
+		<option>Cat</option>
+		<option>Dog</option>
+		<option>Elephant</option>
+		
+	</select>
+
+
+</body>
+</html>

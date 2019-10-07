@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>04-01: HTML 태그에 리스너 작성</title>
+<script>
+var p;
+function init(){
+	p = document.getElementById("p");
+	p.onmouseover = over;//over()를 onmouseover 리스너로 등록
+	p.onmouseout = out; // out()를 onmouseover 리스너로 등록
+}
+function over(){
+	p.style.backgroundColor="orchid";
+}
+function out(){
+	p.style.backgroundColor="white";
+}
+</script>
+</head>
+<body onload="init()">
+<h3>DOM 객체의 이벤트 리스터 프로퍼티에 함수 등록</h3>
+<hr>
+
+<p id="p">마우스 올리면 orchid 색으로 변경</p>
+</body>
+</html>

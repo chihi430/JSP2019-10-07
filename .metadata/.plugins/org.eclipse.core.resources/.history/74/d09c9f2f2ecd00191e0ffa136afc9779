@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+			//Ajax 수행
+			$('#wrap').load('/data.json');
+		});
+	
+	$(document).ajaxComplete(function(){
+		$('#ajax-event').append('<h1>AjaxComplete<h1>')
+	}).ajaxError(function(){
+		$('#ajax-event').append('<h1>AjaxError<h1>')
+	}).ajaxSend(function(){
+		$('#ajax-event').append('<h1>AjaxError<h1>')
+	}).ajaxSuccess(function(){
+		$('#ajax-event').append('<h1>AjaxError<h1>')
+	}).ajaxStart(function(){
+		$('#ajax-event').append('<h1>AjaxError<h1>')
+	})
+	
+	
+	});
+</script>
+<title>Insert title here</title>
+</head>
+<body>
+		<div id="ajax=event"></div>	
+		<div id="wrap">
+		</div>
+		
+</body>
+</html>

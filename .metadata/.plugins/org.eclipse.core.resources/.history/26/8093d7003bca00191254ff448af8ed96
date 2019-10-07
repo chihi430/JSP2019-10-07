@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	//XMLHttpRequest 객체를 생성합니다.
+	var request = new XMLHttpRequest();
+	request.open('GET','../test/data.html', false);
+	
+	
+	//Ajax를 수행합니다.
+	request.send();
+	
+	//출력합니다.	
+	alert(request.responseText);
+	document.body.innerHTML += request.responseText;
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

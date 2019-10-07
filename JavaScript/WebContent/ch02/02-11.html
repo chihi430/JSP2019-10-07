@@ -1,0 +1,51 @@
+<!DOCTYPE
+html>
+<html>
+<head>
+<title>02-10 : 리터럴 표기법으로 사용자 객체 만들기</title>
+
+<script>
+	//사용자 객체 만들기
+	function Account(owner, code, balance) {
+		this.owner = owner;
+		this.code = code;
+		this.balance = balance;
+
+		this.inquiry = function() {
+			return this.balance;
+		}, //잔금 조회
+		this.deposit = function(money) {
+			this.balance += money;
+		}, //저금, money 만큼 저금
+		this.withdraw = function(money) {//예금인출, money는 인출하고자 하는 액수
+			// money가 balance보다 작다고 가정
+
+			this.balance -= money;
+			return money;
+
+		}
+	}
+</script>
+</head>
+<body>
+	<h3>리터러럴 표기법으로 사용자 객체 만들기</h3>
+
+	<hr>
+
+	<script>
+		//new 연산자 이용하여 계좌 객체 생성
+		var account = new Account("홍길동", "111", 35000);
+
+		document.write("account:");
+		document.write(account.owner + ",");
+		document.write(account.code + ",");
+		document.write(account.balance + "<br>");
+
+		account.deposit(10000);//10000원저금
+		document.write("10000원저금후잔액은" + account.inquiry() + "<br>");
+
+		account.withdraw(5000);//5000원인출
+		document.write("5000원인출후잔액은" + account.inquiry() + "<br>");
+	</script>
+</body>
+</html>

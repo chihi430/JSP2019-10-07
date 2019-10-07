@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.outer{ width:200px; height:200px; background: Orange; padding:50px; margin:10px;}
+	.inner{ width:100px; height:100px; background: Pink; }
+</style>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.outer').mouseover(function () {
+			$('body').append('<h1>MOUSEOVER</h1>');
+		}).mouseenter(function(){
+			$('body').append('<h1>MOUSENTER</h1>');
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="outer">
+		<div>
+			<h1>$(selector).on</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+	</div>
+	<div id="lower_div"></div>
+	<h2>ȫ�浿</h2>
+</body>
+</html>

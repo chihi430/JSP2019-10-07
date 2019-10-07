@@ -1,0 +1,41 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<title>05-07 : 웹 페이지 프린트</title>
+
+<script>
+	function startScroll(interval){
+		setInterval("autoScroll()", interval);
+	}
+	
+	function autoScroll(){
+		window.scrollBy(0,10);// 10픽셀 위로 이동
+	}
+</script>
+</head>
+<body onload="startScroll(1000)">
+	<h3>자동 스크롤 페이지</h3>
+	<hr>
+	1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>
+	2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>
+	3<br>3<br>3<br>3<br>3<br>3<br>3<br>3<br>3<br>3<br>3<br>3<br>3<br>3<br>3<br>
+	4<br>4<br>4<br>4<br>4<br>4<br>4<br>4<br>4<br>4<br>4<br>4<br>4<br>4<br>
+	5<br>5<br>5<br>5<br>5<br>5<br>5<br>5<br>5<br>5<br>5<br>5<br>5<br>5<br>5<br>5<br>5<br>
+	6<br>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6<br>
+	7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>
+	8<br>
+	9<br>
+	10<br>
+	11<br>
+	12<br>
+	13<br>
+	14<br>
+	15<br>
+	16<br>
+	17<br>
+	18<br>
+	19<br>
+	20<br>
+	
+</body>
+</html>

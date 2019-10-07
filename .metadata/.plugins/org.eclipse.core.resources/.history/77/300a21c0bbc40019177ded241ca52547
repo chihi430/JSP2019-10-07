@@ -1,0 +1,60 @@
+<!DOCTYPE
+html>
+<html>
+<head>
+<title>02-05 : 객체로 현재시간 알아내기
+</title>
+
+<script>
+	function pr(msg, arr) {
+		document.write(msg + arr.toString() + "<br>");
+	}
+</script>
+</head>
+<body>
+	<h3>Array 객체의 메소드 활용</h3>
+
+	<hr>
+	<script>
+		var a = new Array("황", "김", "이");
+
+		var b = new Array("박");
+
+		var c;
+		pr("배열a=", a);
+		pr("배열b=", b);
+		document.write("<hr>");
+		c = a.concat(b);//c는a와b를연결한새배열
+
+		pr("c = a.concat(b)후 c = ", c);
+		pr("c = a.concat(b)후 a =", a);
+
+		c = a.join("##");//c는배열a를연결한문자열
+
+		pr("c = a.join()후c=", c);
+		pr("c = a.join()후a=", a);
+
+		c = a.reverse();
+		//a.reverse()로a자체변경.c는배열
+
+		pr("c= a.reverse()후c=", c);
+		pr("c= a.reverse() 후a=", a);
+
+		c = a.slice(1, 2);
+		//c는새배열
+
+		pr("c= a.slice(1,2)후c=", c);
+		pr("c=a.slice(1,2)후a=", a);
+
+		c = a.sort();
+		//a.sort()는a자체변경.c는배열
+
+		pr("c= a.sort()후c=", c);
+		pr("c= a.sort()후a=", a);
+
+		c = a.toString();
+		//toString()은원소사이에","를넣어문자열생성
+		vdocument.write("a.toString():" + c);//c는문자열
+	</script>
+</body>
+</html>

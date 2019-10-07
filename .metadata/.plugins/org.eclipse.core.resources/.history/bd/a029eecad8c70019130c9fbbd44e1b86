@@ -1,0 +1,46 @@
+<!DOCTYPE
+html>
+<html>
+<head>
+<title>08-05 : getCurrentPosition()로 현재 위치 파악</title>
+</head>
+
+<body>
+	<h3>getCurrentPosition()로 현재 위치 파악</h3>
+
+	<hr>
+	<div id="msg">이곳에 위치 정보 출력</div>
+	<div id="msg"></div>
+	
+	<script>
+	if(!navigator.geolocation)
+		alert("지원하지 않음");
+	else
+		navigator.geolocation.getCurrentPosition(found);
+	// 위치가 파악 되면 found()가 호출
+	
+	function found(position){
+		var now = new Date(positiion.timestama);
+		var lat = position.coords.latitude; // 위도
+		var lon = position.coords.longitude; // 경도
+		var acc = position.coords.accuracy; // 정확도
+		
+		lat = lat.toPrecision(6); lon=lon.totoPrecision(6);
+		
+		var text = "현재 시간 "+ now.toUTCString() + "<br>";
+		text += "현재 위치( 위도 "+lat+"°, 경도"+lon+"°)<br>";
+		text +="정확도 "+acc+"m<br>";
+		
+		document.getElementById("msg").innerHTML = text;
+		var img = new Image();
+		img.src = "https://maps.googleapis.com/maps/api/staticmap?center="+lat
+				"&zoom=13&size=400x300&sensor=false&markers=color:red%7Clabel:C%7C"+lat+","+lon+"AIzaSyCVuHto2Hz4PboypzTUXW67RFi674WGpec";
+		
+	
+		document.getElementById("map").appendChild(img);
+	}
+	
+	
+	</script>
+	</body>
+</html>

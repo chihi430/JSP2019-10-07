@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+$(document).ready(function(){
+	$('#target').css('color','Orange');
+	// 선택자     css   컬러        색깔명
+});
+
+</script>
+
+</head>
+
+<body>
+<h1> jQurey 기본 선택자</h1>
+태그 선택자<br>
+<ul>
+<li>태그 선택자는 특정한 태그만 선택하는 선택자</li>
+<li>태그의 이름 그냥 사용</li>
+</ul>
+<hr>
+
+	<h1>Header-0</h1>	
+	<h1 id = "target">Header-1</h1>
+	<h1>Header-2</h1>
+</body>
+</html>

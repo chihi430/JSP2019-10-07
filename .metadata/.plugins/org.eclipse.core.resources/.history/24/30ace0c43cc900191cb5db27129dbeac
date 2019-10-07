@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<script>
+
+	$(document).ready(function() {
+		
+	});
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	
+</body>
+</html>

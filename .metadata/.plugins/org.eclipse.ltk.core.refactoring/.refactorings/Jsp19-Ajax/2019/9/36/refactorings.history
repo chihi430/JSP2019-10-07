@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;logout.jsp&apos; to &apos;WebContent&apos;&#x0D;&#x0A;- Original project: &apos;Jsp19-Ajax&apos;&#x0D;&#x0A;- Destination element: &apos;WebContent&apos;&#x0D;&#x0A;- Original element: &apos;logout.jsp&apos;" description="Copy file" element1="WebContent/logout.jsp" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1567761142731" target="/Jsp20_1-DTO/WebContent" units="0" version="1.0"/>
+</session>

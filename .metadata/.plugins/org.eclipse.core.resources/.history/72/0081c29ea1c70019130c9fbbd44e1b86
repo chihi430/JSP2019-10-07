@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>04-17: 선택된 라디오 버튼 알아내기</title>
+
+<script>
+	function findChecked() {
+		var found = null;
+		var kcity = document.getElementsByName("city");
+		for(var i=0; i<kcity.length; i++){
+			if(kcity[i].checked == true)
+				found = kcity[i];
+		}
+	}
+</script>
+
+</head>
+
+<body onload="document.getElementByID('name').focus();">
+	<h3>onfocus와 onblur</h3>
+
+	<hr>
+	<p>이름을 입력하지 않고 다른 창으로 이동할 수 없습니다.</p>
+	<form>
+		이름<input type="text" id="name" onblur="checkFilled(this)">
+		<p>
+			학번 <input type="text">
+	</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$('testarea').mouseover(function() {
+			$('body').append('<h1>MOUSEOVER</h1>');
+		}).mouseenter(function() {
+			$('body').append('<h1>MOUSENTER</h1>');
+		});
+	});
+</script>
+</head>
+<body>
+	<div>
+		<p>지금 내 생각을</p>
+		<h1>150</h1>
+		<textarea cols="70" rows="5"></textarea>
+	</div>
+</body>
+</html>

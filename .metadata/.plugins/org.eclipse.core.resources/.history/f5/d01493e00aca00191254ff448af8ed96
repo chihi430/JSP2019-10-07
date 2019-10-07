@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div {
+	width: 100px;
+	height: 100px;
+	background-color: Orange;
+	position: relative;
+}
+</style>
+<title>Insert title here</title>
+</head>
+<style>
+div {
+	width: 100px;
+	height: 100px;
+	background-color: Orange;
+	position: relative;
+}
+</style>
+
+<script src="http://code.jquery.com/jquery-1.7.js"></script>
+<!--  <script src="http://code.jquery.com/jquery.js"></script> -->
+<script src="jquery.innerfade.js"></script>
+<script>
+	$(document).ready(function() {
+			//animate() 메서드를 사용합니다.
+			$('button').click(function (){
+				var easing = $('select > option:selelcted').html();
+				
+				$('div').animate({
+					left:'400'
+				}, 2000,easing).animate({
+					left:'0'
+				},1000,easing);
+			});						
+		});
+</script>
+
+<body>
+	<select>
+		<option>linear</option>
+		<option>swing</option>
+		<option>easeInQuad</option>
+		<option>easeOutQuad</option>
+		<option>easeInOutQuad</option>
+		<option>easeInCubic</option>
+		<option>easeOutCubic</option>
+		<option>easeInOutCubic</option>
+		<option>easeInQuart</option>
+		<option>easeOutQuart</option>
+		<option>easeInOutQuart</option>
+		<option>easeInQuint</option>
+		<option>easeOutQuint</option>
+		<option>easeInOutQuint</option>
+		<option>easeInSine</option>
+		<option>easeOutSine</option>
+		<option>easeInOutSine</option>
+	</select>
+	<button>Move</button>
+	<div></div>
+</body>
+</html>

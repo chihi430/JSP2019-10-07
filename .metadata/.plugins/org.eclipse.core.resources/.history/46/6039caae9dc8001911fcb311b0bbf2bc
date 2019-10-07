@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	var xml = '';
+	xml +='<friends>';
+	xml +='<friend>';
+	xml +='<name>홍길동</name>';
+	xml +='<language>Ruby</language>';
+	xml +='</friend>';
+	xml +='<friend>';
+	xml +='<name>전우치</name>';
+	xml +='<language>Basic</language>';
+	xml +='</friend>';
+	xml +='<friend>';
+	xml +='<name>홍길동</name>';
+	xml +='<language>C#</language>';
+	xml +='</friend>';
+
+	$(document).ready(function() {
+		$('h1').each(function() {
+			if ($(this).is('.select')) {
+				$(this).css('background', 'Orange');
+			}
+		});
+	});
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+</body>
+</html>

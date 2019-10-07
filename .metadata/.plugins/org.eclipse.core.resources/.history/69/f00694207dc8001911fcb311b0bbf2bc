@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$('tr:odd').css('background','#F9F9F9');
+		$('tr:even').css('background','#9F9F9F');
+		$('tr:first').css('background','#000000').css('color','#FFFFFF');
+	});
+</script>
+</head>
+<body>
+	<h1>jQurey 필터 선택자</h1>
+	<h3>body태그 구성</h3>
+	<hr>
+	<select>
+		<option>Apple</option>
+		<option>Bag</option>
+		<option>Cat</option>
+		<option>Dog</option>
+		<option>Elephant</option>
+		
+	</select>
+
+
+</body>
+</html>

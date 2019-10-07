@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+$(document).ready(function(){
+	$('h1,p').css('color','Orange');
+	// 선택자     css   컬러        색깔명
+});
+
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>jQurey 기본 선택자</h1>
+	태그 선택자의 활용
+	<br>
+	<ul>
+		<li>하나 이상의 태그 선택자를 동시에 사용하고 싶을 때</li>		
+	</ul>
+	<hr>
+
+
+	<h1>Lorem ipSum</h1>
+	<p>Lorem ipSum dolor sit amet.</p>
+	<h1>Lorem ipSum</h1>
+	<p>Lorem ipSum dolor sit amet.</p>
+	<h1>Lorem ipSum</h1>
+	<p>Lorem ipSum dolor sit amet.</p>
+</body>
+</html>

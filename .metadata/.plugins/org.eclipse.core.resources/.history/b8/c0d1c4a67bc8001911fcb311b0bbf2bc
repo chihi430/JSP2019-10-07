@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		// 5초 후에 코드를 실행합니다.
+		setTimeout(funtion() {
+			
+		})
+		$('input[type=text]').val('Hello jQuery..!');
+
+	});
+</script>
+</head>
+<body>
+	<h1>jQurey 입력양식 필터 선택자</h1>
+	<h3>속성 선택자 사용 예제</h3>
+	<hr>
+	<input type="text" />
+	<input type="password" />
+	<input type="radio" />
+	<input type="checkbox" />
+	<input type="file" />
+
+
+</body>
+</html>

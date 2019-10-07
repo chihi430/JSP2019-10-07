@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>04-20 : 키 이벤트</title>
+<script>
+   function whatKeyDown(e) {
+      var str="";
+      var div = document.getElementById("div");
+      div.innerHTML = ""; //div 객체 내용을 지운다.
+      if(e.altkey){
+    	  if(e.altLeft)str+="왼쪽 Alt키가 눌러졌습니다.";
+    	  else str+="오른쪽 shift 키가 눌러졌습니다.";
+    	  str+="<br>";
+    	  }
+      if(e.shiftKey){
+    	  if(e.shiftLeft) str+="왼쪽 Shift 키가 눌러졌습니다.";
+    	  else str+="오른쪽 alt키가 눌러졌습니다.";
+    	  str+="<br>"
+    	  }
+      if(e.ctrlKey){
+    	  if(e.ctrlKey) str+="왼쪽 Ctrl 키가 눌러졌습니다.";
+    	  else str+="오른쪽 alt키가 눌러졌습니다.";
+    	  str+="<br>"
+    	  }
+      
+    	
+    	  str+=String.fromCharCode(e.keyCode) + "키가 눌려졌습니다.";
+    	  div.innerHTML=str; //div 객체에 문자열을 출력한다.
+    	  str+="<br>"
+    	  }
+   }
+</script>
+</head>
+<body onload="drawImage()">
+   <h3>select 객체에서 선택한 과일 출력</h3>
+   <hr>
+   과일을 선택하면 이미지가 출력됩니다.
+   <p>
+   <form>
+      <select id="fruits" onchange="drawImage()">
+         <option value="../images/strawberry.png">딸기
+         <option value="../images/banana.png" selected>바나나
+         <option value="../images/apple.png">사과
+      </select> <img id="fruitimage" src="../images/banana.gif" alt="">
+   </form>
+</body>
+</html>

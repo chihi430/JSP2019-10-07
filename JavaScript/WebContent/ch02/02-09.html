@@ -1,0 +1,64 @@
+<!DOCTYPE
+html>
+<html>
+<head>
+<title>02-09 : new Object()로 사용자 객체 만들기</title>
+
+<script>
+//메소드로사용할3개의함수작성
+
+function inquiry() {return this.balance; }
+//잔금조회
+
+function deposit(money) { this.balance += money; }
+//money만큼저금
+
+function withdraw(money) {
+//예금인출,money는인출하고자하는액수
+
+//money가balance보다작다고가정
+
+this.balance -= money;
+
+return money;
+}
+
+
+//사용자객체만들기
+var account=new Object();
+
+account.owner=" 홍길동 " ;
+//계좌주인프로퍼티생성및초기화
+
+account.code="111";//코드프로퍼티생성및초기화
+
+account.balance = 35000;//잔액프로퍼티생성및초기화
+account.inquiry=inquiry;//메소드작성
+account.deposit=deposit;//메소드작성
+account.withdraw=withdraw;//메소드작성
+
+</script>
+</head>
+<body>
+	<h3>new Object()로 사용자 객체 만들기</h3>
+
+	<hr>
+
+	<script>
+//객체활용
+document.write("account:");
+document.write(account.owner+",");
+document.write(account.code+",");
+document.write(account.balance+"<br>");
+
+account.deposit(10000);//10000원저금
+
+document.write("10000원저금후잔액은"+account.inquiry()+"<br>");
+
+account.withdraw(5000);//5000원인출
+
+document.write("5000원인출후잔액은"+account.inquiry()+"<br>");
+
+</script>
+</body>
+</html>

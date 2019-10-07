@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<script>
+
+	$(document).ready(function() {
+		var content = [
+			{name : '홍길동', region:'서울 특별시 강남구'},
+			{name : '홍길동', region:'서울 특별시 강남구'},
+			{name : '홍길동', region:'서울 특별시 강남구'}
+			
+		];
+		
+		
+		$('body').append(h1,h2,h1,h2);
+	});
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	
+</body>
+</html>

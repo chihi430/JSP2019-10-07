@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		//Ajax 수행
+		$('#wrap').load('/data.json');
+	});
+</script>
+<title>Insert title here</title>
+</head>
+<body>
+	<form id="my=form">
+		<table>
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

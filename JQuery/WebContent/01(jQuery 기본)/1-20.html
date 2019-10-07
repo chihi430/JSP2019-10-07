@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+	.high_light_0 {background: Yellow;}
+	.high_light_1 {background: Orange;}
+	.high_light_2 {background: Blue;}
+	.high_light_3 {background: Green;}
+	.high_light_4 {background: Red;}
+	
+</style>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$('h1').each(function(index, item){
+			$(this).addClass('high_light_'+index);
+		});
+	});
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>jQurey를 사용한 배열관리(2)</h2>
+		<h3>each() 메서드</h3>
+			 
+			<ul>
+				<li> $()메서드 사용해 h1 객체 선택</li>
+				<li> body 태그 안에 h1 태그가 다섯개(다섯 개의 문서 객체 가져옴)</li>
+				<li> 각 객체에 다르게 설정하고 싶을 때 each() 메서드 사용</li>
+				<li> 각 문서 객체에 다른 클래스 적용하는 간단한 예제</li>
+			</ul>
+	<hr>
+	<h1>item - 0</h1>
+	<h1>item - 1</h1>
+	<h1>item - 2</h1>
+	<h1>item - 3</h1>
+	<h1>item - 4</h1>
+
+</body>
+</html>

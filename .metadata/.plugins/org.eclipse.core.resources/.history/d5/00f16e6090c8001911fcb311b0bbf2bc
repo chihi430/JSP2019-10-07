@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		var object ={name : 'RintIanTta'};
+		
+		$extend(object,{
+			gender:'Male';
+			part:'Second Guitar';
+		})
+		var output='';
+		$.each(object,function(key,item){
+			output+=key+': '+item+'\n';
+		});
+		alert(output)		
+	});
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>jQurey를 사용한 배열관리(2)</h2>
+		<h3>addClass() 메서드의 매개 변수 활용</h3>
+			 
+			<ul>
+				<li> 코드 1-21처럼 함수도 입력가능</li>				
+			</ul>
+	<hr>
+
+
+</body>
+</html>

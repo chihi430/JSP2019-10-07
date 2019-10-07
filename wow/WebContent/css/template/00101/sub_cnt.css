@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* 인사말 */
+.greeting {line-height:1.6; word-break:keep-all;}
+.greeting .greeting_top {position:relative;}
+.greeting .greeting_top span {display:block; text-align:right;}
+.greeting .greeting_top p {position:absolute; left:0; bottom:0; height:165px; padding:35px 30px 30px 30px; font-size:30px; color:#005aab; background:#fff; border-bottom:8px solid #005aab;}
+.greeting .greeting_top p:after {content:""; display:block; position:absolute; right:-40px; top:-40px; width:80px; height:80px;  background:url('../../../images/template/00101/sub_cnt/bg_greeting.png') no-repeat right top;}
+.greeting .greeting_top p strong {position:relative; display:block;  padding-top:15px; margin-top:15px; padding-right:70px; font-size:40px; font-family:'NotoB';}
+.greeting .greeting_top p strong:after {content:""; display:block; position:absolute; left:0; top:0; width:85px; height:2px;  background:#005aab;}
+.greeting .name{text-align:right; margin:30px 0 0 ; color:#555; font-size:20px;}
+.greeting .name span {color:#005aab;}
+
+/* 0103_학과소개 */
+.summary_box {padding:25px 45px; font-size:15px; border:1px solid #dfe6ee; border-top:3px solid #005aab; word-break:keep-all;}
+.summary_box .summary_top {position:relative; min-height:100px; padding-left:140px; background:url('../../../images/template/00101/sub_cnt/summary_icon.png') no-repeat left top;}
+.summary_box .txt_box {margin:25px 0 0; border-top:1px dashed #b2b7c7; overflow:hidden;}
+.summary_box .txt_box .btn {display:inline-block; padding:10px 15px; color:#fff;  margin-bottom:10px; line-height:22px; font-size:17px; font-family:"NotoM"; background:#013c6c url('../../../images/template/00101/sub_cnt/summary_btn_bg.png') repeat; border-radius:5px; -webkit-transition:all 0.3s ease; -moz-transition:all 0.3s ease; -ms-transition:all 0.3s ease; transition:all 0.3s ease;}
+.summary_box .txt_box .ico_w {position:relative; padding:10px 50px 10px 15px; margin-bottom:10px;}
+.summary_box .txt_box .ico_w span {position:absolute; right:15px; top:50%; display:block; width:18px; height:18px; margin-top:-9px; -webkit-transition:all 0.3s ease; -moz-transition:all 0.3s ease; -ms-transition:all 0.3s ease; transition:all 0.3s ease;}
+.summary_box .txt_box .ico_w span.link {background:url("../../../images/template/00101/sub_cnt/summary_btn_link.png") no-repeat;}
+.summary_box .txt_box .ico_w:hover span, .summary_box .txt_box .ico_w:focus span {right:20px;}
+
+/********** Media quary **********/
+@media screen and (max-width:1399px){ 
+
+}
+
+@media screen and (max-width:1019px) {
+
+	/* 인사말 */
+	.greeting .greeting_top span img {height:300px;}
+
+
+}
+
+@media screen and (max-width:840px) {
+
+}
+
+@media screen and (max-width:768px) {
+
+	/* 인사말 */
+	.greeting .greeting_top span img {height:auto; width:100%;}
+	.greeting .greeting_top p {position:relative; left:auto; top:auto; height:auto; width:80%; margin:-25px auto 0; padding:25px; text-align:center; font-size:20px; background-image:none; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+	.greeting .greeting_top p br {display:none;}
+	.greeting .greeting_top p strong {margin-top:20px; font-size:30px; padding-right:0;}
+	.greeting .greeting_top p strong:after {left:50%; width:60px; margin-left:-30px;}
+
+	/* 0103_학과소개 */
+	.summary_box {font-size:14px; padding:25px 25px;}
+	.summary_box .summary_top {padding-left:100px; background-size:80px; min-height:80px;}
+
+
+
+}
+
+@media screen and (max-width:640px) {	
+
+}
+
+@media screen and (max-width:560px) {	
+
+}
+
+@media screen and (max-width:480px) {
+
+	/* 인사말 */
+	.greeting .greeting_top p {width:100%; margin:0 auto; padding:25px 20px; font-size:16px;}
+	.greeting .greeting_top p:after {display:none;}
+	.greeting .greeting_top p strong {font-size:20px;}
+	
+	/* 0103_학과소개 */
+	.summary_box .summary_top {padding:100px 0 0; text-align:center; background-position:center top;}
+
+
+}
+
+@media screen and (max-width :380px) {
+
+}

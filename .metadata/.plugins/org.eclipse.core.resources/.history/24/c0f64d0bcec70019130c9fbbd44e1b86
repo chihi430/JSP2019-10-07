@@ -1,0 +1,91 @@
+<!DOCTYPE
+html>
+<html>
+<head>
+<title>08-02 : 자바스크립트로 오디오 제어</title>
+</head>
+<body>
+   <h3>자바스크립트로 오디오 제어</h3>
+
+   <hr>
+   <audio id="audio" src="media/EmbraceableYou.mp3"></audio>
+
+   <div id="msg">이곳에 오디오 제어 메시지 출력</div>
+
+   <button id="play" onclick="control(event)">play</button>
+
+   <button id="pause" onclick="control(event)">pause</button>
+
+   <button id="replay" onclick="control(event)">replay</button>
+   <button id="vol-" onclick="control(event)">vol-</button>
+
+   <button id="vol+" onclick="control(event)">vol+</button>
+
+   <button id="mute
+on/off" onclick="control(event)">mute on/off</button>
+   <script>
+      var div = document.getElementById("msg");
+      var audio = document.getElementById("audio");
+
+      function control(e) {
+         var id = e.target.id;
+         if (id == "play") {
+            // play 버튼 클릭
+
+            audio.play();
+            // 재생
+            div.innerHTML = "재생중입니다.";
+
+         } else if (id == "pause") {//pause버튼클릭
+
+            audio.pause();
+            //일시중지
+
+            div.innerHTML = "일시중지되었습니다.";
+
+         } else if (id == "replay") {
+            //replay버튼클릭
+            audio.load();//src에지정된미디어다시로딩
+
+            audio.play();
+            //처음부터다시재생
+
+            div.innerHTML = audio.src + "를처음부터재생합니다.";
+
+         } else if (id == "vol-") {
+            //vol-버튼클릭
+
+            audio.volume -= 0.1;
+            //음량0.1감소
+
+            if (audio.volume < 0.1)
+               audio.volume = 0;
+
+            div.innerHTML = "음량0.1감소." + "현재" + audio.volume;
+
+         } else if (id == "vol+") {
+            //vol+버튼클릭
+
+            audio.volume += 0.1;//음량0.1증가
+
+            if (audio.volume > 0.9)
+               audio.volume = 1.0;
+
+            div.innerHTML = "음량0.1증가." + "현재" + audio.volume;
+
+         } else if (id == "muteon/off") {//muteon/off버튼클릭
+
+            audio.muted = !audio.muted;
+            //음소거토글
+
+            if (audio.muted)
+               div.innerHTML = "음소거";
+
+            else
+               div.innerHTML = "음소거해제";
+
+         }
+      }
+   </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BWriteCommand.java&apos; to &apos;Jsp27-BBS3/src/com.study.jsp.command&apos;&#x0D;&#x0A;- Original project: &apos;Jsp27-BBS3&apos;&#x0D;&#x0A;- Destination element: &apos;Jsp27-BBS3/src/com.study.jsp.command&apos;&#x0D;&#x0A;- Original element: &apos;com.study.jsp.command.BWriteCommand.java&apos;" description="Copy compilation unit" destination="/src&lt;com.study.jsp.command" element1="/src&lt;com.study.jsp.command{BWriteCommand.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1568105122400" units="1" version="1.0"/>
+</session>

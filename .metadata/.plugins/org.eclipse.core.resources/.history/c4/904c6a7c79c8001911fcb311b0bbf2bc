@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$('input[type=text]').val('Hello jQuery..!');
+		
+	});
+</script>
+</head>
+<body>
+	<h1>jQurey 속성 선택자</h1>
+	<h3>속성 선택자 사용 예제 코드</h3>
+	<hr>
+	<div>
+		<ul>
+			<li><h1>Apple</h1></li>
+			<li>Bag</li>
+			<li>Cat</li>
+			<li>Dog</li>
+			<li>Elephant</li>
+		</ul>
+		<h1>Child H1</h1>
+	</div>
+
+</body>
+</html>

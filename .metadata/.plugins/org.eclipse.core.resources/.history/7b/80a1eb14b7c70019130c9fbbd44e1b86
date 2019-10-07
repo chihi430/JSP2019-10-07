@@ -1,0 +1,27 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<title>05-06 : 웹 페이지 자동 스크롤</title>
+
+<script>
+	function startScroll(interval){
+		setInterval("autoScroll()", interval);
+	}
+	
+	function autoScroll(){
+		window.scrollBy(0,10);// 10픽셀 위로 이동
+	}
+</script>
+
+</head>
+<body>
+	<h3>윈도우의 위치와 크기 조절</h3>
+	<hr>
+	<button onclick="window.moveBy(-10, 0)">left</button>
+	<button onclick="window.moveBy(10, 0)">right</button>
+	<button onclick="self.moveBy(0, -10)">up</button>
+	<button onclick="moveBy(0, 10)">down</button>
+	<button onclick="resizeBy(10, 10)">+</button>
+	<button onclick="resizeBy(-10, -10)">-</button>
+</body>
+</html>

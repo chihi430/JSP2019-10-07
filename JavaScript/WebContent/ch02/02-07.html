@@ -1,0 +1,39 @@
+<!DOCTYPE
+html>
+<html>
+<head>
+<title>02-06 : 방문시간에 따라 변하는 배경색</title>
+</head>
+<body>
+	<h3>페이지 방문 초시간이 짝수이면 violet, 홀수이면 lightskyblue 배경</h3>
+
+	<hr>
+	<script>
+		var a = new String("Boys and Girl");
+		var b = "!!";
+		document.write("a : "+ a +"<br>");
+		document.write("b : "+ b +"<br><br>");
+		
+		document.write(a.charAt(0)+"<br>");
+		document.write(a.concat(b,"입니다.")+"<br>");
+		document.write(a.indexOf("s")+"<br>");
+		document.write(a.indexOf("and")+"<br>");
+		document.write(a.slice(5,8)+"<br>");
+		document.write(a.substr(5,3)+"<br>");
+		document.write(a.toUpperCase()+"<br>");
+		document.write(a.replace("and","or")+"<br>");
+		document.write("   홍길동     ".trim()+"<br><hr>");
+		var sub=a.split(" ");
+		document.write("a를 빈칸으로 분리<br>");
+		for(var i=0;i<sub.length; i++)
+			document.write("sub"+i+"="+sub[i]+"<br>");
+		
+		
+		document.write("<hr>String 메소드를 실행 후 a와 b변함 없음 <br> ");
+		document.write(" a : "+a+"<br>");
+		document.write(" b : "+b+"<br>");
+		
+		
+</script>
+</body>
+</html>

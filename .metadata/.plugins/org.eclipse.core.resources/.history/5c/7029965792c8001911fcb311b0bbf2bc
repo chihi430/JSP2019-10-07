@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.high_light{background: Yellow;}
+</style>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$.noConflict();
+	var J =jQuery;	
+		
+		J(document).ready(function (){
+			alert("111");
+			J('h1').removeClass('hight_light');		
+	});
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>jQurey 프레임 워크 충돌 방지</h2>
+		<h3>$.noConflict()</h3>
+			 
+			<ul>
+				<li> 충돌을 방지할 떄 사용하는 메서드</li>
+				<li> $.noConflict() 메서드 사용 </li>
+				<ul>
+				<li> 더이상 jQuery의 식별자 $를 사용 할 수 없음 </li>
+				</ul>				
+			</ul>
+	<hr>
+<h1 class="high_light">item-0</h1>
+<h2 class="high_light">item-1</h2>
+
+</body>
+</html>

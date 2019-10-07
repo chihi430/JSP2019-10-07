@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+var xml='';
+
+xml+='<friends>';
+xml+='   <friend>';
+xml+='      <name>예지니</name>';
+xml+='      <language>yeeeah</language>';
+xml+='   </friend>';
+xml+='   <friend>';
+xml+='      <name>유지니</name>';
+xml+='      <language>uzineee</language>';
+xml+='   </friend>';
+xml+='   <friend>';
+xml+='      <name>서기남</name>';
+xml+='      <language>ㅗㅗ</language>';
+xml+='   </friend>';
+xml+='</friends>';
+
+$(document).ready(function() {
+   //변수를 선언합니다.
+   var xmlDoc=$.parseXML(xml);
+   $(xmlDoc).find('friend').each(function(index){
+      var output='';
+      
+      output+='<div>';
+      output+='   <h1>'+$(this).find('name').text()+'</h1>';
+      output+='   <p>'+$(this).find('language').text()+'</p>';
+      output+='</div>';
+      
+      document.body.innerHTML+=output;
+   });
+});
+</script>
+</head>
+<body>
+
+</body>
+</html>

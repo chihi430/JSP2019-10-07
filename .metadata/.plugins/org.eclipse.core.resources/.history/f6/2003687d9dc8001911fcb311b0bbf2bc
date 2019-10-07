@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	var xml = '';
+	xml +=
+
+	$(document).ready(function() {
+		$('h1').each(function() {
+			if ($(this).is('.select')) {
+				$(this).css('background', 'Orange');
+			}
+		});
+	});
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+</body>
+</html>

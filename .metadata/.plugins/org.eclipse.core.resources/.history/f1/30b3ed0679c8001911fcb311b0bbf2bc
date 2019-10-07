@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$('div h1').css('color', 'red');
+		// 선택자     css   컬러        색깔명
+	});
+</script>
+</head>
+<body>
+	<h1>jQurey 자식 선택자와 후손석택자</h1>
+	<h3>자식 선택자</h3>
+	<ul>
+		<li>자식을 선택하는 선택자</li>
+		<li>'부모>자식'의 형태로 사용</li>
+		<li>div 태그의 자식으로 범위한정</li>
+	</ul>
+
+	<hr>
+	<div>
+		<ul>
+			<li><h1>Apple</h1></li>
+			<li>Bag</li>
+			<li>Cat</li>
+			<li>Dog</li>
+			<li>Elephant</li>
+		</ul>
+		<h1>Child H1</h1>
+	</div>
+
+</body>
+</html>

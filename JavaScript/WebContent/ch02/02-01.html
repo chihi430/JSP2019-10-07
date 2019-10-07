@@ -1,0 +1,23 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<title>02-01:객체생성및활용</title>
+</head>
+<body>
+   <h3>객체생성및활용</h3>
+   <hr>
+   <script>
+      //Date객체생성
+      var today = new Date();
+      
+      //Date객체의toGMTString()메소드호출
+      document.write("현재시간:" + today.toGMTString() + "<br>");
+      
+      //String객체생성
+      var mystr = new String("자바스크립트공부하기");
+      document.write("mystr의내용:" + mystr + "<br>");
+      document.write("mystr의길이:" + mystr.length + "<br>");
+      //mystr.length=10;//이문장은오류이다.
+   </script>
+</body>
+</html>

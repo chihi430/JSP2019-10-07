@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$('tr:odd').css('background','#F9F9F9');
+		$('tr:even').css('background','#9F9F9F');
+	});
+</script>
+</head>
+<body>
+	<h1>jQurey 입력양식 필터 선택자</h1>
+	<h3>setTime() 함수 사용해 웹페이지 실행 -> 5초 후 선택자 사용</h3>
+	<hr>
+	<select>
+		<option>Apple</option>
+		<option>Bag</option>
+		<option>Cat</option>
+		<option>Dog</option>
+		<option>Elephant</option>
+		
+	</select>
+
+
+</body>
+</html>

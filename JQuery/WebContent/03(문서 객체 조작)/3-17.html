@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<script>
+
+// text() 메서드를 사용한 문서 객체 내부 문자 추가
+
+	$(document).ready(function() {		
+		$('div').html(function (index){
+			return '<h1>Header-'+index + '</h1>';
+		});									
+	});
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	
+</body>
+</html>

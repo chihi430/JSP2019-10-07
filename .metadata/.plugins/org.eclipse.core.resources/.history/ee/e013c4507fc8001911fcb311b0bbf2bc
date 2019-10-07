@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$('tr:odd').css('background','#F9F9F9'); //홀수번째에 위치한 객체선택
+		$('tr:even').css('background','#9F9F9F'); // 짝수 번째에 위치한 객체 선택
+		$('tr:first').css('background','#000000').css('color','#FFFFFF'); // 첫번째 위치한 객체선택
+	});
+</script>
+</head>
+<body>
+	<h1>jQurey 필터 선택자</h1>
+	<h3>body태그 구성</h3>
+	<hr>
+	<table>
+	<tr><th>이름</th><th>혈액형</th><th>지역</th></tr>
+	<tr><td>강민수</td><td>AB형</td><td>서울특별시 송파구</td></tr>
+	<tr><td>구지연</td><td>B형</td><td>미국 캘리포니아</td></tr>
+	<tr><td>김마화</td><td>AB형</td><td>미국 메사추세츠</td></tr>
+	<tr><td>김선화</td><td>O형</td><td>서울 강서구</td></tr>
+	<tr><td>남기주</td><td>A형</td><td>서울 노량진구</td></tr>
+	<tr><td>윤하린</td><td>B형</td><td>서울 용산구</td></tr>
+	
+	
+	</table>
+
+
+</body>
+</html>

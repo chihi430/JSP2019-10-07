@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.first{color:Red;}
+	.second{color:Green;}
+	.third{color:Blue;}
+</style>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<script>
+	$(document).ready(function() {
+		// 변수를 선언합니다.
+		var color = $('h1').eq(1).css('color');
+		
+		//출력합니다.		
+		alert(color);
+	});
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 class="first">Header-0</h1>
+	<h1 class="second">Header-1</h1>
+	<h1 class="third">Header-2</h1>
+</body>
+</html>

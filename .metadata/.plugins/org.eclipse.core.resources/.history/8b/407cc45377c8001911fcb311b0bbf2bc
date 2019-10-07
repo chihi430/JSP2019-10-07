@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+$(document).ready(function(){
+	$('.item.select').css('color','Orange');
+	// 선택자     css   컬러        색깔명
+});
+
+</script>
+
+</head>
+<body>
+<h1> jQurey 기본 선택자</h1>
+두클래스 속성을 모두 갖는 문서 객체를 선택하고 싶을 때
+
+<hr>
+	<h1 class="item">Header-0</h1>	
+	<h1 class="item select">Header-1</h1>
+	<h1 class="item">Header-2</h1>
+	
+</body>
+</html>

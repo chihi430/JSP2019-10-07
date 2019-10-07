@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="member">
+	<!-- 회원가입 -->
+	<insert id="member_insert" parameterType="memberDTO">
+		insert into ex_memberinfo values(#{id}, #{passwd}, #{name}, #{email}, #{nickname}, sysdate)
+	</insert>
+
+	<!-- 아이디 중복 검사 -->
+	<select id="member_check" parameterType="String" resultType="int">
+		select count(id) from ex_memberinfo where id = #{id}
+	</select>
+	
+	<!-- 로그인 비밀번호 검사 -->
+	<select parameterType="String" id="passwd_check" resultType="String"> 
+		select passwd from ex_memberinfo where id = #{id} 
+	</select>
+
+	<!-- 회원정보 검색 -->
+	<select parameterType="String" id="get_member" resultType="memberDTO"> 
+		select * from ex_memberinfo where id = #{id} 
+	</select>
+	
+	<!-- 회원정보 수정 -->
+	<update id="update_member" parameterType="memberDTO">
+		update ex_memberinfo set name = #{name}, email = #{email}, nickname = #{nickname} where id = #{id}
+	</update>
+	
+	<!-- 비밀번호 변경 -->
+	<update id="passwd_change" parameterType="memberDTO">
+		update ex_memberinfo set passwd = #{passwd} where id = #{id}
+	</update>
+	
+	<!-- 회원탈퇴 -->
+	<delete id="member_delete" parameterType="String">
+		delete from ex_memberinfo where id = #{id}
+	</delete>
+</mapper>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		//변수를 선언합니다.
+		var object ={name : 'RintIanTta'};
+		
+		// $.extend() 메서드를 사용합니다.
+		$.extend(object,{
+			gender:'Male',
+			part:'Second Guitar'
+		});
+		var output='';
+		$.each(object,function(key,item){
+			output+=key+': '+item+'\n';
+		});
+		alert(output);		
+	});
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>jQurey를 사용한 객체 확장</h2>
+		<h3>$. extend() 메서드</h3>
+			 
+			<ul>
+				<li> 많은 수의 속성 추가할 때 생기는 문제를 해결하는 메서드</li>
+				<li> 사용법($.extend(object,addObject,addObject....))</li>				
+			</ul>
+	<hr>
+
+
+</body>
+</html>

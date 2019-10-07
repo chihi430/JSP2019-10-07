@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+ * {margin:0px; padding:0px;}
+ ul{
+ 	list-style:none;
+ }
+ img{ width:500px; height:350px;}
+</style>
+<title>Insert title here</title>
+</head>
+<script src="http://code.jquery.com/jquery-1.7.js"></script>
+<!--  <script src="http://code.jquery.com/jquery.js"></script> -->
+<script src="jquery.innerfade.js"></script>
+<script>
+$(document).ready(function(){
+	$('#inner_fade').innerfade({
+		anuimationtype:'fade',
+		speed:750,
+		timeout:2000,
+		type:'random',
+		containerheight:'350px'
+	});
+});
+</script>
+
+<body>
+	<ul id="inner_fade">
+		<li><img src="../image/Chrysanthemum.jpg"></li>
+		<li><img src="../image/Desert.jpg"></li>
+		<li><img src="../image/Hydrangeas.jpg"></li>
+		<li><img src="../image/Jellyfish.jpg"></li>
+		<li><img src="../image/Koala.jpg"></li>
+	</ul>
+</body>
+</html>

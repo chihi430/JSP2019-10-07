@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<!-- 참고로 일반적으로 사용하는 navi 관련 class명!
+.gnb : Global Navigation Bar -> 로그인, 언어 등을 포함하는 최상단 메뉴
+.lnb : Local Navigation Bar -> 메인메뉴
+.snb : Side Navigation Bar -> 서브메뉴
+
+※ navi는 gnb, lnb, snb 통틀어서 얘기할 때 쓴다.
+ -->
+
+<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<style>
+header {
+	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid #cccccc;
+}
+
+#gnb ul {
+	font-family: 'Lobster';
+	padding: 0;
+	overflow: hidden;
+}
+
+#gnb ul li {
+	list-style: none;
+	float: left;
+	border: 1px dotted #cccccc;
+	margin: 0;
+}
+
+#gnb ul li a {
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+}
+
+#lnb ul {
+	font-family: 'Lobster';
+	padding: 0;
+	overflow: hidden;
+}
+
+#lnb ul li {
+	list-style: none;
+	float: right;
+	border: 1px dotted #cccccc;
+	margin: 0;
+}
+
+#lnb ul li a {
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+}
+
+#content {
+	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid #cccccc;
+	overflow: hidden;
+}
+
+#section {
+	font-family: 'Nanum Pen Script';
+	font-weight: bold;
+	font-size: 1.2em;
+	width: 800px;
+	height: 400px;
+	padding: 10px;
+	float: left;
+	border: 1px solid #cccccc;
+}
+
+#aside {
+	font-family: 'Nanum Pen Script';
+	font-weight: bold;
+	font-size: 1.2em;
+	width: 150px;
+	height: 400px;
+	padding: 10px;
+	float: right;
+	border: 1px solid #cccccc;
+}
+
+footer {
+	font-family: 'Lobster';
+	width: 1000px;
+	height: 100px;
+	line-height: 100px;
+	margin: 0 auto;
+	border: 1px solid #cccccc;
+	text-align: center;
+}
+</style>
+
+</head>
+<body>
+	<header>
+		<div id="gnb">
+			<ul>
+				<li><a href="#none">gnb01</a></li>
+				<li><a href="#none">gnb02</a></li>
+				<li><a href="#none">gnb03</a></li>
+				<li><a href="#none">gnb04</a></li>
+				<li><a href="#none">gnb05</a></li>
+			</ul>
+		</div>
+		<div id="lnb">	
+			<ul>
+				<li><a href="#none">lnb01</a></li>
+				<li><a href="#none">lnb02</a></li>
+				<li><a href="#none">lnb03</a></li>
+				<li><a href="#none">lnb04</a></li>
+				<li><a href="#none">lnb05</a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<div id="content">
+		<div id="section">
+		박창환입니다. 날씨가 맑고 좋아요
+		
+		</div>
+		<div id="aside">
+		박창환입니다. 날씨가 맑고 좋아요
+		</div>
+	</div>
+</body>
+</html>
+
+
+
